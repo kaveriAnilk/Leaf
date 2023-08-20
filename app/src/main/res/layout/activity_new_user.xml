@@ -42,6 +42,7 @@
         android:textColorHint="#6C806B" />
 
     <ImageButton
+        android:id="@+id/submit_button"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/edt_name"
         android:layout_width="wrap_content"
