@@ -24,19 +24,36 @@ class newUser : AppCompatActivity() {
         val storageDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)
         val file = File(storageDir, fileName)
 
+        //only for checking purpose
+        val filePin = "Pin.txt"
+        val storageDir2 = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)
+        val filepin = File(storageDir, filePin)
+
         if (!file.exists() || file.readText().isEmpty()) {
             file.createNewFile()
         }
         else {
-            val intent = Intent(this@newUser, MainActivity::class.java)
-            startActivity(intent)
-            finish() // Finish current activity
+
+            if(!filepin.exists() || filepin.readText().isEmpty())
+                {
+                    val intent = Intent(this@newUser, pin_verfication::class.java)
+                    startActivity(intent)
+                }
+            else
+            {
+                val intent = Intent(this@newUser, check_pin::class.java)
+                startActivity(intent)
+                finish() // Finish current activity
+            }
+
         }
 
         // Submit button
         submit.setOnClickListener {
             val nameOfUser = name.text.toString().trim()
             file.writeText(nameOfUser)
+            val intent = Intent(this@newUser, pin_verfication::class.java)
+            startActivity(intent)
             }
         }
     }

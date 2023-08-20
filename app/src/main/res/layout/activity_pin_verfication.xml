@@ -54,6 +54,7 @@
         android:textColorHint="#6C806B"/>
 
     <ImageButton
+        android:id="@+id/submit"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/edt_pin"
         android:layout_width="wrap_content"

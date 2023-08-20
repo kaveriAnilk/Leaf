@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newUser">
+    tools:context=".pin_verfication">
 
     <ImageView
         android:id="@+id/logo"
@@ -21,36 +21,47 @@
         android:layout_marginTop="257dp"/>
 
     <TextView
+        android:id="@+id/set_pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="50dp"
-        android:text="Welcome"
+        android:text="Confirm Pin"
         android:textSize="28dp"
         android:textStyle="bold" />
 
-    <EditText
+    <ImageView
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="225dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_key_24"/>
 
-        android:id="@+id/edt_name"
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/set_pin"
+        android:id="@+id/edt_pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="430dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:maxLength="4"
         android:background="@drawable/edit_text_background"
-        android:hint="Enter your name"
-        android:maxLength="20"
+        android:hint="Enter Pin"
         android:paddingLeft="20dp"
-        android:textColorHint="#6C806B" />
+        android:textColorHint="#6C806B"/>
 
     <ImageButton
-        android:id="@+id/submit_button"
+        android:id="@+id/submit"
         android:layout_marginTop="40dp"
-        android:layout_below="@+id/edt_name"
+        android:layout_below="@+id/edt_pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/submit_button"
         android:backgroundTint="@color/white"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
