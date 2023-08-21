@@ -73,5 +73,16 @@
         android:backgroundTint="@color/white"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/forgot_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Pin"
+        android:textColor="@color/blue" />
+
 
 </RelativeLayout>
