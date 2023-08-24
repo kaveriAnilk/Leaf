@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet"
+    android:background="@color/home_green">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_selection_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#60AF63"
+        android:text="Wallet"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/homecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/home_card"
+        android:paddingLeft="10dp"
+        android:text="Money Transfer"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_pay"
+                android:background="@color/white"/> <!-- Adjust scaleType as needed -->
+
+            <ImageButton
+                android:id="@+id/recieve"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/recieve"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/split"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_money"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/><!-- Adjust scaleType as needed -->
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:text="Pay"
+                android:textStyle="bold"
+                android:layout_width="30dp"/>
+            <TextView
+                android:layout_marginLeft="56dp"
+                android:text="Recieve"
+                android:textStyle="bold"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="67dp"
+                android:text="Split"
+                android:textStyle="bold"
+                android:layout_width="30dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:layout_below="@+id/homecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/home_card"
+        android:paddingLeft="10dp"
+        android:text="Add Money to Wallet"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_money_edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@+id/homecard"
+        android:layout_marginTop="50dp"
+        android:hint="Add Money"
+        android:background="@drawable/edit_text_background"
+        android:paddingLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/proceed_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/proceedtoadd_button"
+        android:layout_below="@+id/add_money_edt"
+        android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/spend_analytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_spend_analytics"
+        android:layout_below="@+id/proceed_to_add"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rupee"
+        android:layout_below="@+id/proceed_to_add"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TableLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                android:background="@color/white"/> <!-- Adjust scaleType as needed -->
+
+            <ImageButton
+                android:id="@+id/wallet"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wallet"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/><!-- Adjust scaleType as needed -->
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:text="Home"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="80dp"
+                android:text="Wallet"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="80dp"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

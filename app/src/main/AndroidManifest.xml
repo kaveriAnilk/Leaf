@@ -18,6 +18,9 @@
         android:theme="@style/Base.Theme.FInance"
         tools:targetApi="31">
         <activity
+            android:name=".wallet"
+            android:exported="false" />
+        <activity
             android:name=".check_pin"
             android:exported="false" />
         <activity
