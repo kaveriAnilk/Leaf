@@ -18,7 +18,10 @@
         android:theme="@style/Base.Theme.FInance"
         tools:targetApi="31">
         <activity
-            android:name=".wallet"
+            android:name=".profile_bottom_nav"
+            android:exported="false" />
+        <activity
+            android:name=".wallet_bottom_nav"
             android:exported="false" />
         <activity
             android:name=".check_pin"
@@ -30,7 +33,7 @@
             android:name=".pin_verfication"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".home_bottom_nav"
             android:exported="false" />
         <activity
             android:name=".newUser"

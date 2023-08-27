@@ -36,7 +36,7 @@ class pin_verification_2 : AppCompatActivity() {
             else
             {
                 val show = Toast.makeText(this, "Pin set Successfully", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@pin_verification_2,MainActivity::class.java)
+                val intent = Intent(this@pin_verification_2,home_bottom_nav::class.java)
                 startActivity(intent)
             }
 

@@ -39,7 +39,7 @@ class check_pin : AppCompatActivity() {
             var pinfromuser = pin.text.toString()
             if(pinfromuser == filepin.readText().toString())
             {
-                val intent = Intent(this@check_pin,MainActivity::class.java)
+                val intent = Intent(this@check_pin,home_bottom_nav::class.java)
                 startActivity(intent)
             }
             else
