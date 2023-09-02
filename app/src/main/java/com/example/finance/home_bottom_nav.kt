@@ -30,6 +30,13 @@ class home_bottom_nav : AppCompatActivity() {
 
         wallet.setOnClickListener {wallet() }
         profile.setOnClickListener {profile() }
+
+
+
+
+        pay.setOnClickListener {
+
+        }
     }
     fun wallet()
     {
